@@ -1,0 +1,2102 @@
+[
+    {
+        "summary": {
+            "status": "success",
+            "zero_load_latency": 155.385,
+            "saturation_throughput": 0.111,
+            "total_router_area": 13.684195354172799,
+            "total_router_power": 5.0246377280895995,
+            "total_link_power": 0.7765430399999999,
+            "energy_per_packet": 3.296125436414545
+        },
+        "orion_details": {
+            "Pleakage": 172.21794735359998,
+            "Pinternal": 3246.614662064,
+            "Pswitching": 1605.805118672,
+            "Ainbuffer": 13261763.2,
+            "Aoutbuffer": 200417.000688,
+            "Acrossbar": 79497.6479424,
+            "Aswvc": 130463.21654720002,
+            "Aclkctrl": 12054.288995199997,
+            "Atotal": 13684195.3541728,
+            "Ptotal": 5024.6377280895995
+        },
+        "orion_config": {
+            "n_vcs": 4,
+            "vc_buf_size": 4,
+            "frequency": 1000000000.0,
+            "data_width": 64
+        },
+        "experiment_config": {
+            "nodes_per_router": 1,
+            "node_link_latency": 5,
+            "packet_size": 4,
+            "message_size": 16,
+            "frequency": 1000000000.0,
+            "link_fault_rate": 0.0,
+            "router_fault_rate": 0.0,
+            "n_entropy_bits": 8,
+            "traffic": "uniform",
+            "in_order_ratio": 0.5,
+            "num_vcs": 4,
+            "setting": "noc",
+            "width": 3.25,
+            "height": 3.25,
+            "vc_buf_size": 4,
+            "data_width": 64,
+            "topology": "mesh",
+            "n_routers": 64,
+            "routing_function": "modular_routing",
+            "mod_routing_function": "up_down",
+            "mod_selection_function": "hashed",
+            "name": "vary_buf_size_noc_4_modular_routing_up_down_hashed",
+            "plot_type": "lines",
+            "plot_subplot": "setting",
+            "plot_x_axis": "buf_size"
+        },
+        "booksim_details": {
+            "0.001": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 13.388822302222252,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 155.385,
+                    "min": 18.0,
+                    "max": 435.0
+                },
+                "network_latency": {
+                    "avg": 48.9189,
+                    "min": 18.0,
+                    "max": 101.0
+                },
+                "flit_latency": {
+                    "avg": 45.8915,
+                    "min": 15.0,
+                    "max": 96.0
+                },
+                "fragmentation": {
+                    "avg": 0.0357863,
+                    "min": 0.0,
+                    "max": 4.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.000220312,
+                    "min": 0.0,
+                    "max": 0.000571429
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.000219754,
+                    "min": 0.0,
+                    "max": 0.000571429
+                },
+                "injected_flit_rate": {
+                    "avg": 0.00088125,
+                    "min": 0.0,
+                    "max": 0.00228571
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.000879241,
+                    "min": 0.0,
+                    "max": 0.00228571
+                },
+                "injected_packet_size": {
+                    "avg": 4.0
+                },
+                "accepted_packet_size": {
+                    "avg": 4.00102
+                },
+                "hops": {
+                    "avg": 6.09677
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 13.3353,
+                "last_ten_lines_of_output": "Accepted packet size average = 4.00102 (1 samples)\nHops average = 6.09677 (1 samples)\nTotal number of messages = 144\nTotal number of packets = 2304\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 13.3353\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.1": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 541.2479133754969,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 2288.12,
+                    "min": 18.0,
+                    "max": 71051.0
+                },
+                "network_latency": {
+                    "avg": 103.372,
+                    "min": 18.0,
+                    "max": 3162.0
+                },
+                "flit_latency": {
+                    "avg": 97.6754,
+                    "min": 13.0,
+                    "max": 3159.0
+                },
+                "fragmentation": {
+                    "avg": 1.38664,
+                    "min": 0.0,
+                    "max": 45.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0249991,
+                    "min": 0.0196278,
+                    "max": 0.0295111
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0249957,
+                    "min": 0.0222278,
+                    "max": 0.0289556
+                },
+                "injected_flit_rate": {
+                    "avg": 0.099996,
+                    "min": 0.0785111,
+                    "max": 0.118044
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.0999828,
+                    "min": 0.0889111,
+                    "max": 0.115822
+                },
+                "injected_packet_size": {
+                    "avg": 3.99998
+                },
+                "accepted_packet_size": {
+                    "avg": 4.00001
+                },
+                "hops": {
+                    "avg": 6.28341
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 541.173,
+                "last_ten_lines_of_output": "Accepted packet size average = 4.00001 (1 samples)\nHops average = 6.28341 (1 samples)\nTotal number of messages = 26818\nTotal number of packets = 429088\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 541.173\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.11": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 423.753894969821,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 4961.53,
+                    "min": 18.0,
+                    "max": 114779.0
+                },
+                "network_latency": {
+                    "avg": 102.478,
+                    "min": 18.0,
+                    "max": 3612.0
+                },
+                "flit_latency": {
+                    "avg": 97.8727,
+                    "min": 13.0,
+                    "max": 3608.0
+                },
+                "fragmentation": {
+                    "avg": 1.45215,
+                    "min": 0.0,
+                    "max": 31.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0262439,
+                    "min": 0.0137222,
+                    "max": 0.0312778
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0262594,
+                    "min": 0.0234444,
+                    "max": 0.0298611
+                },
+                "injected_flit_rate": {
+                    "avg": 0.104978,
+                    "min": 0.0548889,
+                    "max": 0.125117
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.105036,
+                    "min": 0.0937778,
+                    "max": 0.119444
+                },
+                "injected_packet_size": {
+                    "avg": 4.00007
+                },
+                "accepted_packet_size": {
+                    "avg": 3.99994
+                },
+                "hops": {
+                    "avg": 6.2559
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 423.641,
+                "last_ten_lines_of_output": "Accepted packet size average = 3.99994 (1 samples)\nHops average = 6.2559 (1 samples)\nTotal number of messages = 21332\nTotal number of packets = 341312\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 423.641\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.111": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 565.4083237051964,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 4990.38,
+                    "min": 18.0,
+                    "max": 123376.0
+                },
+                "network_latency": {
+                    "avg": 96.4307,
+                    "min": 18.0,
+                    "max": 3057.0
+                },
+                "flit_latency": {
+                    "avg": 89.6201,
+                    "min": 13.0,
+                    "max": 3054.0
+                },
+                "fragmentation": {
+                    "avg": 1.43705,
+                    "min": 0.0,
+                    "max": 28.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0264937,
+                    "min": 0.0154,
+                    "max": 0.0305833
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0265053,
+                    "min": 0.0233667,
+                    "max": 0.0304944
+                },
+                "injected_flit_rate": {
+                    "avg": 0.105978,
+                    "min": 0.0616,
+                    "max": 0.122344
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.10602,
+                    "min": 0.0934667,
+                    "max": 0.121978
+                },
+                "injected_packet_size": {
+                    "avg": 4.0001
+                },
+                "accepted_packet_size": {
+                    "avg": 3.99995
+                },
+                "hops": {
+                    "avg": 6.2485
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 565.292,
+                "last_ten_lines_of_output": "Accepted packet size average = 3.99995 (1 samples)\nHops average = 6.2485 (1 samples)\nTotal number of messages = 27660\nTotal number of packets = 442560\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 565.292\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.112": {
+                "return_code": 2,
+                "status": "Unstable simulation",
+                "runtime": 361.67491072416306,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 5386.54,
+                    "min": 18.0,
+                    "max": 78639.0
+                },
+                "network_latency": {
+                    "avg": 115.408,
+                    "min": 18.0,
+                    "max": 2232.0
+                },
+                "flit_latency": {
+                    "avg": 110.99,
+                    "min": 13.0,
+                    "max": 2229.0
+                },
+                "fragmentation": {
+                    "avg": 1.47784,
+                    "min": 0.0,
+                    "max": 46.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0260354,
+                    "min": 0.0135857,
+                    "max": 0.0326786
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0260325,
+                    "min": 0.02205,
+                    "max": 0.0300714
+                },
+                "injected_flit_rate": {
+                    "avg": 0.104143,
+                    "min": 0.0543429,
+                    "max": 0.130714
+                },
+                "accepted_flit_rate": {
+                    "avg": NaN,
+                    "min": 0.0881929,
+                    "max": 0.120286
+                },
+                "total_run_time": 361.567,
+                "last_ten_lines_of_output": "\tmaximum = 0.120286 (at node 27)\nInjected packet length average = 4.00007\nAccepted packet length average = 3.99999\nTotal in-flight flits = 2822 (2822 measured)\nlatency change    = 0.102581\nthroughput change = 0.000321364\nAverage latency for class 0 exceeded 5000 cycles. Aborting simulation.\nSimulation unstable: Too many sample periods needed to converge\nTotal run time 361.567\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.12": {
+                "return_code": 2,
+                "status": "Unstable simulation",
+                "runtime": 130.88442169129848,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 5021.01,
+                    "min": 18.0,
+                    "max": 30089.0
+                },
+                "network_latency": {
+                    "avg": 127.914,
+                    "min": 18.0,
+                    "max": 1912.0
+                },
+                "flit_latency": {
+                    "avg": 124.152,
+                    "min": 13.0,
+                    "max": 2064.0
+                },
+                "fragmentation": {
+                    "avg": 1.50833,
+                    "min": 0.0,
+                    "max": 39.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0261539,
+                    "min": 0.01385,
+                    "max": 0.03515
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0261543,
+                    "min": 0.0184,
+                    "max": 0.035325
+                },
+                "injected_flit_rate": {
+                    "avg": 0.104616,
+                    "min": 0.0554,
+                    "max": 0.1406
+                },
+                "accepted_flit_rate": {
+                    "avg": NaN,
+                    "min": 0.0736,
+                    "max": 0.141325
+                },
+                "total_run_time": 130.77,
+                "last_ten_lines_of_output": "\tmaximum = 0.141325 (at node 47)\nInjected packet length average = 4.00003\nAccepted packet length average = 3.9997\nTotal in-flight flits = 2914 (2914 measured)\nlatency change    = 0.176132\nthroughput change = 0.0127782\nAverage latency for class 0 exceeded 5000 cycles. Aborting simulation.\nSimulation unstable: Too many sample periods needed to converge\nTotal run time 130.77\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.2": {
+                "return_code": 2,
+                "status": "Unstable simulation",
+                "runtime": 92.19161289930344,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 10058.3,
+                    "min": 24.0,
+                    "max": 35820.0
+                },
+                "network_latency": {
+                    "avg": 123.485,
+                    "min": 18.0,
+                    "max": 2618.0
+                },
+                "flit_latency": {
+                    "avg": 124.718,
+                    "min": 13.0,
+                    "max": 5043.0
+                },
+                "fragmentation": {
+                    "avg": 1.60784,
+                    "min": 0.0,
+                    "max": 27.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0281719,
+                    "min": 0.00765,
+                    "max": 0.04805
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0281625,
+                    "min": 0.0197,
+                    "max": 0.039
+                },
+                "injected_flit_rate": {
+                    "avg": 0.112687,
+                    "min": 0.0306,
+                    "max": 0.1922
+                },
+                "accepted_flit_rate": {
+                    "avg": NaN,
+                    "min": 0.07895,
+                    "max": 0.156
+                },
+                "total_run_time": 92.0796,
+                "last_ten_lines_of_output": "\tmaximum = 0.156 (at node 11)\nInjected packet length average = 4\nAccepted packet length average = 4.00047\nTotal in-flight flits = 3092 (3092 measured)\nlatency change    = 0.664403\nthroughput change = 0.032023\nAverage latency for class 0 exceeded 5000 cycles. Aborting simulation.\nSimulation unstable: Too many sample periods needed to converge\nTotal run time 92.0796\n",
+                "number_of_deadlocked_runs": 0
+            }
+        },
+        "booksim_config": {
+            "deadlock_attempts": 10,
+            "seed": "time",
+            "ignore_cycles": 1,
+            "trace_time_out": 7200,
+            "precision": 0.001,
+            "saturation_factor": 2,
+            "router_latency": 3,
+            "warmup_periods": 1,
+            "sim_count": 1,
+            "hold_switch_for_packet": 0,
+            "vc_allocator": "separable_input_first",
+            "sw_allocator": "separable_input_first",
+            "alloc_iters": 1,
+            "wait_for_tail_credit": 0,
+            "priority": "none",
+            "injection_rate_uses_flits": 1,
+            "deadlock_warn_timeout": 200000,
+            "time_limit": 43200,
+            "latency_thres": 5000.0,
+            "routing_function": "modular_routing",
+            "modular_routing_function": "up_down",
+            "modular_selection_function": "hashed",
+            "num_vcs": 4,
+            "vc_buf_size": 4,
+            "packet_size": 4,
+            "message_size": 16,
+            "in_order_ratio": 0.5,
+            "n_entropy_bits": 8,
+            "threshold_mode": "shortest",
+            "mode": "traffic",
+            "traffic": "uniform",
+            "trace_file": null,
+            "sample_period": 20000,
+            "repetition": 2
+        }
+    },
+    {
+        "summary": {
+            "status": "success",
+            "zero_load_latency": 158.357,
+            "saturation_throughput": 0.114,
+            "total_router_area": 13.684195354172799,
+            "total_router_power": 5.0246377280895995,
+            "total_link_power": 0.7765430399999999,
+            "energy_per_packet": 3.296125436414545
+        },
+        "orion_details": {
+            "Pleakage": 172.21794735359998,
+            "Pinternal": 3246.614662064,
+            "Pswitching": 1605.805118672,
+            "Ainbuffer": 13261763.2,
+            "Aoutbuffer": 200417.000688,
+            "Acrossbar": 79497.6479424,
+            "Aswvc": 130463.21654720002,
+            "Aclkctrl": 12054.288995199997,
+            "Atotal": 13684195.3541728,
+            "Ptotal": 5024.6377280895995
+        },
+        "orion_config": {
+            "n_vcs": 4,
+            "vc_buf_size": 4,
+            "frequency": 1000000000.0,
+            "data_width": 64
+        },
+        "experiment_config": {
+            "nodes_per_router": 1,
+            "node_link_latency": 5,
+            "packet_size": 4,
+            "message_size": 16,
+            "frequency": 1000000000.0,
+            "link_fault_rate": 0.0,
+            "router_fault_rate": 0.0,
+            "n_entropy_bits": 8,
+            "traffic": "uniform",
+            "in_order_ratio": 0.5,
+            "num_vcs": 4,
+            "setting": "noc",
+            "width": 3.25,
+            "height": 3.25,
+            "vc_buf_size": 4,
+            "data_width": 64,
+            "topology": "mesh",
+            "n_routers": 64,
+            "routing_function": "modular_routing",
+            "mod_routing_function": "up_down",
+            "mod_selection_function": "hashed",
+            "name": "vary_buf_size_noc_4_modular_routing_up_down_hashed",
+            "plot_type": "lines",
+            "plot_subplot": "setting",
+            "plot_x_axis": "buf_size"
+        },
+        "booksim_details": {
+            "0.001": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 15.66572780907154,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 158.357,
+                    "min": 18.0,
+                    "max": 439.0
+                },
+                "network_latency": {
+                    "avg": 53.1058,
+                    "min": 18.0,
+                    "max": 168.0
+                },
+                "flit_latency": {
+                    "avg": 49.9895,
+                    "min": 15.0,
+                    "max": 165.0
+                },
+                "fragmentation": {
+                    "avg": 0.0225904,
+                    "min": 0.0,
+                    "max": 5.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.000230295,
+                    "min": 0.0,
+                    "max": 0.000533333
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.000230122,
+                    "min": 0.0,
+                    "max": 0.000533333
+                },
+                "injected_flit_rate": {
+                    "avg": 0.000921181,
+                    "min": 0.0,
+                    "max": 0.00213333
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.000920486,
+                    "min": 0.0,
+                    "max": 0.00213333
+                },
+                "injected_packet_size": {
+                    "avg": 4.0
+                },
+                "accepted_packet_size": {
+                    "avg": 4.0
+                },
+                "hops": {
+                    "avg": 6.6747
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 15.5519,
+                "last_ten_lines_of_output": "Accepted packet size average = 4 (1 samples)\nHops average = 6.6747 (1 samples)\nTotal number of messages = 188\nTotal number of packets = 3008\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 15.5519\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.1": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 162.98985886573792,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 438.721,
+                    "min": 18.0,
+                    "max": 7020.0
+                },
+                "network_latency": {
+                    "avg": 78.2584,
+                    "min": 18.0,
+                    "max": 1096.0
+                },
+                "flit_latency": {
+                    "avg": 74.0194,
+                    "min": 13.0,
+                    "max": 1093.0
+                },
+                "fragmentation": {
+                    "avg": 1.37131,
+                    "min": 0.0,
+                    "max": 31.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0249469,
+                    "min": 0.0189333,
+                    "max": 0.0298667
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0249404,
+                    "min": 0.0186667,
+                    "max": 0.0306833
+                },
+                "injected_flit_rate": {
+                    "avg": 0.0997914,
+                    "min": 0.0757333,
+                    "max": 0.119467
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.0997617,
+                    "min": 0.0746667,
+                    "max": 0.122733
+                },
+                "injected_packet_size": {
+                    "avg": 4.00016
+                },
+                "accepted_packet_size": {
+                    "avg": 4.00001
+                },
+                "hops": {
+                    "avg": 6.2505
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 162.873,
+                "last_ten_lines_of_output": "Accepted packet size average = 4.00001 (1 samples)\nHops average = 6.2505 (1 samples)\nTotal number of messages = 8238\nTotal number of packets = 131808\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 162.873\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.11": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 701.7653677463531,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 4944.2,
+                    "min": 18.0,
+                    "max": 157959.0
+                },
+                "network_latency": {
+                    "avg": 101.657,
+                    "min": 18.0,
+                    "max": 3646.0
+                },
+                "flit_latency": {
+                    "avg": 94.6464,
+                    "min": 13.0,
+                    "max": 3643.0
+                },
+                "fragmentation": {
+                    "avg": 1.46979,
+                    "min": 0.0,
+                    "max": 36.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0265168,
+                    "min": 0.0162278,
+                    "max": 0.03155
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0265261,
+                    "min": 0.0233389,
+                    "max": 0.0301278
+                },
+                "injected_flit_rate": {
+                    "avg": 0.106068,
+                    "min": 0.0649111,
+                    "max": 0.1262
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.106104,
+                    "min": 0.09335,
+                    "max": 0.120511
+                },
+                "injected_packet_size": {
+                    "avg": 4.00006
+                },
+                "accepted_packet_size": {
+                    "avg": 3.99998
+                },
+                "hops": {
+                    "avg": 6.24055
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 701.648,
+                "last_ten_lines_of_output": "Accepted packet size average = 3.99998 (1 samples)\nHops average = 6.24055 (1 samples)\nTotal number of messages = 33539\nTotal number of packets = 536624\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 701.648\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.111": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 297.1674916446209,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 410.851,
+                    "min": 18.0,
+                    "max": 7998.0
+                },
+                "network_latency": {
+                    "avg": 72.7733,
+                    "min": 18.0,
+                    "max": 1132.0
+                },
+                "flit_latency": {
+                    "avg": 68.5387,
+                    "min": 13.0,
+                    "max": 1129.0
+                },
+                "fragmentation": {
+                    "avg": 1.40712,
+                    "min": 0.0,
+                    "max": 26.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0272909,
+                    "min": 0.0216,
+                    "max": 0.0322333
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0272906,
+                    "min": 0.022825,
+                    "max": 0.0322667
+                },
+                "injected_flit_rate": {
+                    "avg": 0.109163,
+                    "min": 0.0864,
+                    "max": 0.128933
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.109164,
+                    "min": 0.0912833,
+                    "max": 0.129067
+                },
+                "injected_packet_size": {
+                    "avg": 3.99998
+                },
+                "accepted_packet_size": {
+                    "avg": 4.00006
+                },
+                "hops": {
+                    "avg": 6.23629
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 297.047,
+                "last_ten_lines_of_output": "Accepted packet size average = 4.00006 (1 samples)\nHops average = 6.23629 (1 samples)\nTotal number of messages = 15399\nTotal number of packets = 246384\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 297.047\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.112": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 459.37077552080154,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 1915.86,
+                    "min": 18.0,
+                    "max": 85321.0
+                },
+                "network_latency": {
+                    "avg": 89.4471,
+                    "min": 18.0,
+                    "max": 1707.0
+                },
+                "flit_latency": {
+                    "avg": 84.9831,
+                    "min": 13.0,
+                    "max": 2579.0
+                },
+                "fragmentation": {
+                    "avg": 1.43923,
+                    "min": 0.0,
+                    "max": 32.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0275758,
+                    "min": 0.01712,
+                    "max": 0.03412
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0275758,
+                    "min": 0.02301,
+                    "max": 0.03218
+                },
+                "injected_flit_rate": {
+                    "avg": 0.110305,
+                    "min": 0.06848,
+                    "max": 0.13648
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.110303,
+                    "min": 0.09204,
+                    "max": 0.12872
+                },
+                "injected_packet_size": {
+                    "avg": 4.00006
+                },
+                "accepted_packet_size": {
+                    "avg": 3.99999
+                },
+                "hops": {
+                    "avg": 6.24741
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 459.251,
+                "last_ten_lines_of_output": "Accepted packet size average = 3.99999 (1 samples)\nHops average = 6.24741 (1 samples)\nTotal number of messages = 22569\nTotal number of packets = 361104\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 459.251\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.113": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 501.6267189383507,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 4969.42,
+                    "min": 18.0,
+                    "max": 96215.0
+                },
+                "network_latency": {
+                    "avg": 97.5433,
+                    "min": 18.0,
+                    "max": 2604.0
+                },
+                "flit_latency": {
+                    "avg": 91.6424,
+                    "min": 13.0,
+                    "max": 2601.0
+                },
+                "fragmentation": {
+                    "avg": 1.46501,
+                    "min": 0.0,
+                    "max": 44.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0271652,
+                    "min": 0.0143889,
+                    "max": 0.0325167
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.027175,
+                    "min": 0.0231111,
+                    "max": 0.0305778
+                },
+                "injected_flit_rate": {
+                    "avg": 0.108662,
+                    "min": 0.0575556,
+                    "max": 0.130067
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.108697,
+                    "min": 0.0924444,
+                    "max": 0.122311
+                },
+                "injected_packet_size": {
+                    "avg": 4.00006
+                },
+                "accepted_packet_size": {
+                    "avg": 3.99989
+                },
+                "hops": {
+                    "avg": 6.24725
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 501.508,
+                "last_ten_lines_of_output": "Accepted packet size average = 3.99989 (1 samples)\nHops average = 6.24725 (1 samples)\nTotal number of messages = 23333\nTotal number of packets = 373328\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 501.508\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.114": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 234.94051958620548,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 364.222,
+                    "min": 18.0,
+                    "max": 2557.0
+                },
+                "network_latency": {
+                    "avg": 72.0979,
+                    "min": 18.0,
+                    "max": 831.0
+                },
+                "flit_latency": {
+                    "avg": 67.7593,
+                    "min": 13.0,
+                    "max": 828.0
+                },
+                "fragmentation": {
+                    "avg": 1.49198,
+                    "min": 0.0,
+                    "max": 35.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0287654,
+                    "min": 0.0240125,
+                    "max": 0.035375
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0287686,
+                    "min": 0.02205,
+                    "max": 0.0341625
+                },
+                "injected_flit_rate": {
+                    "avg": 0.115064,
+                    "min": 0.0960375,
+                    "max": 0.141462
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.115074,
+                    "min": 0.0882375,
+                    "max": 0.13665
+                },
+                "injected_packet_size": {
+                    "avg": 4.00008
+                },
+                "accepted_packet_size": {
+                    "avg": 3.99999
+                },
+                "hops": {
+                    "avg": 6.24144
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 234.819,
+                "last_ten_lines_of_output": "Accepted packet size average = 3.99999 (1 samples)\nHops average = 6.24144 (1 samples)\nTotal number of messages = 11703\nTotal number of packets = 187248\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 234.819\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.115": {
+                "return_code": 2,
+                "status": "Unstable simulation",
+                "runtime": 446.81851817667484,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 5532.07,
+                    "min": 18.0,
+                    "max": 108949.0
+                },
+                "network_latency": {
+                    "avg": 103.411,
+                    "min": 18.0,
+                    "max": 4150.0
+                },
+                "flit_latency": {
+                    "avg": 98.9197,
+                    "min": 13.0,
+                    "max": 4144.0
+                },
+                "fragmentation": {
+                    "avg": 1.48537,
+                    "min": 0.0,
+                    "max": 33.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0267924,
+                    "min": 0.0138833,
+                    "max": 0.0308833
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0267899,
+                    "min": 0.0230611,
+                    "max": 0.0306611
+                },
+                "injected_flit_rate": {
+                    "avg": 0.107169,
+                    "min": 0.0555278,
+                    "max": 0.123533
+                },
+                "accepted_flit_rate": {
+                    "avg": NaN,
+                    "min": 0.0922389,
+                    "max": 0.122656
+                },
+                "total_run_time": 446.698,
+                "last_ten_lines_of_output": "\tmaximum = 0.122656 (at node 11)\nInjected packet length average = 3.99996\nAccepted packet length average = 3.99999\nTotal in-flight flits = 2399 (2399 measured)\nlatency change    = 0.111255\nthroughput change = 0.0046868\nAverage latency for class 0 exceeded 5000 cycles. Aborting simulation.\nSimulation unstable: Too many sample periods needed to converge\nTotal run time 446.698\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.12": {
+                "return_code": 2,
+                "status": "Unstable simulation",
+                "runtime": 274.3524377942085,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 5338.36,
+                    "min": 18.0,
+                    "max": 72444.0
+                },
+                "network_latency": {
+                    "avg": 107.953,
+                    "min": 18.0,
+                    "max": 3223.0
+                },
+                "flit_latency": {
+                    "avg": 103.559,
+                    "min": 13.0,
+                    "max": 3220.0
+                },
+                "fragmentation": {
+                    "avg": 1.47013,
+                    "min": 0.0,
+                    "max": 40.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0269455,
+                    "min": 0.01229,
+                    "max": 0.03331
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.026942,
+                    "min": 0.02192,
+                    "max": 0.03059
+                },
+                "injected_flit_rate": {
+                    "avg": 0.107779,
+                    "min": 0.04916,
+                    "max": 0.13324
+                },
+                "accepted_flit_rate": {
+                    "avg": NaN,
+                    "min": 0.08768,
+                    "max": 0.12237
+                },
+                "total_run_time": 274.234,
+                "last_ten_lines_of_output": "\tmaximum = 0.12237 (at node 25)\nInjected packet length average = 3.9999\nAccepted packet length average = 4.00006\nTotal in-flight flits = 2418 (2418 measured)\nlatency change    = 0.133376\nthroughput change = 0.00560512\nAverage latency for class 0 exceeded 5000 cycles. Aborting simulation.\nSimulation unstable: Too many sample periods needed to converge\nTotal run time 274.234\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.2": {
+                "return_code": 2,
+                "status": "Unstable simulation",
+                "runtime": 91.28728426992893,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 13181.8,
+                    "min": 3150.0,
+                    "max": 32715.0
+                },
+                "network_latency": {
+                    "avg": 134.914,
+                    "min": 18.0,
+                    "max": 2867.0
+                },
+                "flit_latency": {
+                    "avg": 133.352,
+                    "min": 13.0,
+                    "max": 2864.0
+                },
+                "fragmentation": {
+                    "avg": 1.50418,
+                    "min": 0.0,
+                    "max": 30.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.026032,
+                    "min": 0.00935,
+                    "max": 0.0454
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0260516,
+                    "min": 0.016,
+                    "max": 0.036
+                },
+                "injected_flit_rate": {
+                    "avg": 0.10412,
+                    "min": 0.03735,
+                    "max": 0.18155
+                },
+                "accepted_flit_rate": {
+                    "avg": NaN,
+                    "min": 0.064,
+                    "max": 0.144
+                },
+                "total_run_time": 91.1685,
+                "last_ten_lines_of_output": "\tmaximum = 0.144 (at node 12)\nInjected packet length average = 3.9997\nAccepted packet length average = 4\nTotal in-flight flits = 2745 (2745 measured)\nlatency change    = 0.667188\nthroughput change = 0.00377107\nAverage latency for class 0 exceeded 5000 cycles. Aborting simulation.\nSimulation unstable: Too many sample periods needed to converge\nTotal run time 91.1685\n",
+                "number_of_deadlocked_runs": 0
+            }
+        },
+        "booksim_config": {
+            "deadlock_attempts": 10,
+            "seed": "time",
+            "ignore_cycles": 1,
+            "trace_time_out": 7200,
+            "precision": 0.001,
+            "saturation_factor": 2,
+            "router_latency": 3,
+            "warmup_periods": 1,
+            "sim_count": 1,
+            "hold_switch_for_packet": 0,
+            "vc_allocator": "separable_input_first",
+            "sw_allocator": "separable_input_first",
+            "alloc_iters": 1,
+            "wait_for_tail_credit": 0,
+            "priority": "none",
+            "injection_rate_uses_flits": 1,
+            "deadlock_warn_timeout": 200000,
+            "time_limit": 43200,
+            "latency_thres": 5000.0,
+            "routing_function": "modular_routing",
+            "modular_routing_function": "up_down",
+            "modular_selection_function": "hashed",
+            "num_vcs": 4,
+            "vc_buf_size": 4,
+            "packet_size": 4,
+            "message_size": 16,
+            "in_order_ratio": 0.5,
+            "n_entropy_bits": 8,
+            "threshold_mode": "shortest",
+            "mode": "traffic",
+            "traffic": "uniform",
+            "trace_file": null,
+            "sample_period": 20000,
+            "repetition": 2
+        }
+    },
+    {
+        "summary": {
+            "status": "success",
+            "zero_load_latency": 157.153,
+            "saturation_throughput": 0.11,
+            "total_router_area": 13.684195354172799,
+            "total_router_power": 5.0246377280895995,
+            "total_link_power": 0.7765430399999999,
+            "energy_per_packet": 3.296125436414545
+        },
+        "orion_details": {
+            "Pleakage": 172.21794735359998,
+            "Pinternal": 3246.614662064,
+            "Pswitching": 1605.805118672,
+            "Ainbuffer": 13261763.2,
+            "Aoutbuffer": 200417.000688,
+            "Acrossbar": 79497.6479424,
+            "Aswvc": 130463.21654720002,
+            "Aclkctrl": 12054.288995199997,
+            "Atotal": 13684195.3541728,
+            "Ptotal": 5024.6377280895995
+        },
+        "orion_config": {
+            "n_vcs": 4,
+            "vc_buf_size": 4,
+            "frequency": 1000000000.0,
+            "data_width": 64
+        },
+        "experiment_config": {
+            "nodes_per_router": 1,
+            "node_link_latency": 5,
+            "packet_size": 4,
+            "message_size": 16,
+            "frequency": 1000000000.0,
+            "link_fault_rate": 0.0,
+            "router_fault_rate": 0.0,
+            "n_entropy_bits": 8,
+            "traffic": "uniform",
+            "in_order_ratio": 0.5,
+            "num_vcs": 4,
+            "setting": "noc",
+            "width": 3.25,
+            "height": 3.25,
+            "vc_buf_size": 4,
+            "data_width": 64,
+            "topology": "mesh",
+            "n_routers": 64,
+            "routing_function": "modular_routing",
+            "mod_routing_function": "up_down",
+            "mod_selection_function": "hashed",
+            "name": "vary_buf_size_noc_4_modular_routing_up_down_hashed",
+            "plot_type": "lines",
+            "plot_subplot": "setting",
+            "plot_x_axis": "buf_size"
+        },
+        "booksim_details": {
+            "0.001": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 15.799864545464516,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 157.153,
+                    "min": 18.0,
+                    "max": 463.0
+                },
+                "network_latency": {
+                    "avg": 50.2811,
+                    "min": 18.0,
+                    "max": 214.0
+                },
+                "flit_latency": {
+                    "avg": 47.7494,
+                    "min": 15.0,
+                    "max": 211.0
+                },
+                "fragmentation": {
+                    "avg": 0.00634518,
+                    "min": 0.0,
+                    "max": 3.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.000274826,
+                    "min": 0.0,
+                    "max": 0.000711111
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.000275,
+                    "min": 0.0,
+                    "max": 0.000888889
+                },
+                "injected_flit_rate": {
+                    "avg": 0.00109957,
+                    "min": 0.0,
+                    "max": 0.00284444
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.0011,
+                    "min": 0.0,
+                    "max": 0.00355556
+                },
+                "injected_packet_size": {
+                    "avg": 4.00095
+                },
+                "accepted_packet_size": {
+                    "avg": 4.0
+                },
+                "hops": {
+                    "avg": 6.19797
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 15.6861,
+                "last_ten_lines_of_output": "Accepted packet size average = 4 (1 samples)\nHops average = 6.19797 (1 samples)\nTotal number of messages = 216\nTotal number of packets = 3456\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 15.6861\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.1": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 369.9453771263361,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 520.127,
+                    "min": 18.0,
+                    "max": 11931.0
+                },
+                "network_latency": {
+                    "avg": 76.114,
+                    "min": 18.0,
+                    "max": 1718.0
+                },
+                "flit_latency": {
+                    "avg": 72.0879,
+                    "min": 13.0,
+                    "max": 1715.0
+                },
+                "fragmentation": {
+                    "avg": 1.32105,
+                    "min": 0.0,
+                    "max": 36.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0250803,
+                    "min": 0.0207437,
+                    "max": 0.02905
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0250767,
+                    "min": 0.0204125,
+                    "max": 0.0284625
+                },
+                "injected_flit_rate": {
+                    "avg": 0.100321,
+                    "min": 0.0829813,
+                    "max": 0.1162
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.100307,
+                    "min": 0.0816375,
+                    "max": 0.113863
+                },
+                "injected_packet_size": {
+                    "avg": 4.0
+                },
+                "accepted_packet_size": {
+                    "avg": 4.00002
+                },
+                "hops": {
+                    "avg": 6.24893
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 369.828,
+                "last_ten_lines_of_output": "Accepted packet size average = 4.00002 (1 samples)\nHops average = 6.24893 (1 samples)\nTotal number of messages = 18270\nTotal number of packets = 292320\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 369.828\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.101": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 483.0740719139576,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 1600.4,
+                    "min": 18.0,
+                    "max": 36044.0
+                },
+                "network_latency": {
+                    "avg": 96.9498,
+                    "min": 18.0,
+                    "max": 2071.0
+                },
+                "flit_latency": {
+                    "avg": 92.481,
+                    "min": 13.0,
+                    "max": 2068.0
+                },
+                "fragmentation": {
+                    "avg": 1.40056,
+                    "min": 0.0,
+                    "max": 30.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0249503,
+                    "min": 0.0217222,
+                    "max": 0.0293667
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0249497,
+                    "min": 0.0219889,
+                    "max": 0.0273222
+                },
+                "injected_flit_rate": {
+                    "avg": 0.0998014,
+                    "min": 0.0869056,
+                    "max": 0.117467
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.0997987,
+                    "min": 0.0879556,
+                    "max": 0.109278
+                },
+                "injected_packet_size": {
+                    "avg": 4.0
+                },
+                "accepted_packet_size": {
+                    "avg": 3.99999
+                },
+                "hops": {
+                    "avg": 6.26366
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 482.954,
+                "last_ten_lines_of_output": "Accepted packet size average = 3.99999 (1 samples)\nHops average = 6.26366 (1 samples)\nTotal number of messages = 22985\nTotal number of packets = 367760\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 482.954\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.102": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 366.2993412017822,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 3256.84,
+                    "min": 18.0,
+                    "max": 61390.0
+                },
+                "network_latency": {
+                    "avg": 113.453,
+                    "min": 18.0,
+                    "max": 2082.0
+                },
+                "flit_latency": {
+                    "avg": 107.587,
+                    "min": 13.0,
+                    "max": 2353.0
+                },
+                "fragmentation": {
+                    "avg": 1.45845,
+                    "min": 0.0,
+                    "max": 33.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0255267,
+                    "min": 0.01602,
+                    "max": 0.03113
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0255283,
+                    "min": 0.02216,
+                    "max": 0.03184
+                },
+                "injected_flit_rate": {
+                    "avg": 0.102108,
+                    "min": 0.06408,
+                    "max": 0.12452
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.102116,
+                    "min": 0.08864,
+                    "max": 0.12736
+                },
+                "injected_packet_size": {
+                    "avg": 4.00004
+                },
+                "accepted_packet_size": {
+                    "avg": 4.0001
+                },
+                "hops": {
+                    "avg": 6.21986
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 366.183,
+                "last_ten_lines_of_output": "Accepted packet size average = 4.0001 (1 samples)\nHops average = 6.21986 (1 samples)\nTotal number of messages = 18083\nTotal number of packets = 289328\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 366.183\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.103": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 544.295065164566,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 2198.32,
+                    "min": 18.0,
+                    "max": 74191.0
+                },
+                "network_latency": {
+                    "avg": 90.5524,
+                    "min": 18.0,
+                    "max": 2554.0
+                },
+                "flit_latency": {
+                    "avg": 86.2498,
+                    "min": 13.0,
+                    "max": 2551.0
+                },
+                "fragmentation": {
+                    "avg": 1.39158,
+                    "min": 0.0,
+                    "max": 31.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0254352,
+                    "min": 0.0196722,
+                    "max": 0.0285333
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.025439,
+                    "min": 0.0214611,
+                    "max": 0.0297611
+                },
+                "injected_flit_rate": {
+                    "avg": 0.101741,
+                    "min": 0.0786833,
+                    "max": 0.114133
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.101757,
+                    "min": 0.0858444,
+                    "max": 0.119044
+                },
+                "injected_packet_size": {
+                    "avg": 4.00002
+                },
+                "accepted_packet_size": {
+                    "avg": 4.00006
+                },
+                "hops": {
+                    "avg": 6.21401
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 544.186,
+                "last_ten_lines_of_output": "Accepted packet size average = 4.00006 (1 samples)\nHops average = 6.21401 (1 samples)\nTotal number of messages = 27565\nTotal number of packets = 441040\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 544.186\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.104": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 441.23937144875526,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 1306.77,
+                    "min": 18.0,
+                    "max": 36915.0
+                },
+                "network_latency": {
+                    "avg": 85.0638,
+                    "min": 18.0,
+                    "max": 1980.0
+                },
+                "flit_latency": {
+                    "avg": 80.6111,
+                    "min": 13.0,
+                    "max": 2008.0
+                },
+                "fragmentation": {
+                    "avg": 1.38627,
+                    "min": 0.0,
+                    "max": 33.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0260423,
+                    "min": 0.0207437,
+                    "max": 0.0304625
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0260423,
+                    "min": 0.0224,
+                    "max": 0.0303313
+                },
+                "injected_flit_rate": {
+                    "avg": 0.10417,
+                    "min": 0.082975,
+                    "max": 0.12185
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.10417,
+                    "min": 0.0896,
+                    "max": 0.121344
+                },
+                "injected_packet_size": {
+                    "avg": 4.00005
+                },
+                "accepted_packet_size": {
+                    "avg": 4.00005
+                },
+                "hops": {
+                    "avg": 6.23585
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 441.115,
+                "last_ten_lines_of_output": "Accepted packet size average = 4.00005 (1 samples)\nHops average = 6.23585 (1 samples)\nTotal number of messages = 22308\nTotal number of packets = 356928\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 441.115\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.105": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 251.18579889833927,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 610.372,
+                    "min": 18.0,
+                    "max": 12948.0
+                },
+                "network_latency": {
+                    "avg": 80.6229,
+                    "min": 18.0,
+                    "max": 1608.0
+                },
+                "flit_latency": {
+                    "avg": 76.3416,
+                    "min": 13.0,
+                    "max": 1603.0
+                },
+                "fragmentation": {
+                    "avg": 1.37628,
+                    "min": 0.0,
+                    "max": 27.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0258313,
+                    "min": 0.01858,
+                    "max": 0.02961
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0258337,
+                    "min": 0.02165,
+                    "max": 0.0288
+                },
+                "injected_flit_rate": {
+                    "avg": 0.103326,
+                    "min": 0.07432,
+                    "max": 0.11844
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.103333,
+                    "min": 0.0866,
+                    "max": 0.1152
+                },
+                "injected_packet_size": {
+                    "avg": 4.00003
+                },
+                "accepted_packet_size": {
+                    "avg": 3.99992
+                },
+                "hops": {
+                    "avg": 6.20691
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 251.083,
+                "last_ten_lines_of_output": "Accepted packet size average = 3.99992 (1 samples)\nHops average = 6.20691 (1 samples)\nTotal number of messages = 12826\nTotal number of packets = 205216\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 251.083\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.106": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 528.7985613495111,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 1599.33,
+                    "min": 18.0,
+                    "max": 51948.0
+                },
+                "network_latency": {
+                    "avg": 84.5275,
+                    "min": 18.0,
+                    "max": 2372.0
+                },
+                "flit_latency": {
+                    "avg": 80.5723,
+                    "min": 13.0,
+                    "max": 3993.0
+                },
+                "fragmentation": {
+                    "avg": 1.38491,
+                    "min": 0.0,
+                    "max": 33.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0261122,
+                    "min": 0.0218667,
+                    "max": 0.0302444
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0261085,
+                    "min": 0.0228722,
+                    "max": 0.0296
+                },
+                "injected_flit_rate": {
+                    "avg": 0.104449,
+                    "min": 0.0874667,
+                    "max": 0.120978
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.104434,
+                    "min": 0.0914889,
+                    "max": 0.1184
+                },
+                "injected_packet_size": {
+                    "avg": 4.00003
+                },
+                "accepted_packet_size": {
+                    "avg": 4.0
+                },
+                "hops": {
+                    "avg": 6.21769
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 528.69,
+                "last_ten_lines_of_output": "Accepted packet size average = 4 (1 samples)\nHops average = 6.21769 (1 samples)\nTotal number of messages = 26105\nTotal number of packets = 417680\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 528.69\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.107": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 680.4259174913168,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 4068.52,
+                    "min": 18.0,
+                    "max": 123835.0
+                },
+                "network_latency": {
+                    "avg": 98.2156,
+                    "min": 18.0,
+                    "max": 3082.0
+                },
+                "flit_latency": {
+                    "avg": 91.965,
+                    "min": 13.0,
+                    "max": 3078.0
+                },
+                "fragmentation": {
+                    "avg": 1.41811,
+                    "min": 0.0,
+                    "max": 43.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0260114,
+                    "min": 0.0159722,
+                    "max": 0.0315667
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0260119,
+                    "min": 0.0229389,
+                    "max": 0.0297556
+                },
+                "injected_flit_rate": {
+                    "avg": 0.104046,
+                    "min": 0.0639056,
+                    "max": 0.126267
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.104048,
+                    "min": 0.0917556,
+                    "max": 0.119022
+                },
+                "injected_packet_size": {
+                    "avg": 4.00002
+                },
+                "accepted_packet_size": {
+                    "avg": 4.00001
+                },
+                "hops": {
+                    "avg": 6.24445
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 680.315,
+                "last_ten_lines_of_output": "Accepted packet size average = 4.00001 (1 samples)\nHops average = 6.24445 (1 samples)\nTotal number of messages = 33523\nTotal number of packets = 536368\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 680.315\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.108": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 698.3394517600536,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 4848.46,
+                    "min": 18.0,
+                    "max": 122935.0
+                },
+                "network_latency": {
+                    "avg": 93.6785,
+                    "min": 18.0,
+                    "max": 2888.0
+                },
+                "flit_latency": {
+                    "avg": 86.8859,
+                    "min": 13.0,
+                    "max": 2885.0
+                },
+                "fragmentation": {
+                    "avg": 1.43642,
+                    "min": 0.0,
+                    "max": 38.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0262839,
+                    "min": 0.0153778,
+                    "max": 0.0306222
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0262834,
+                    "min": 0.0228333,
+                    "max": 0.0296778
+                },
+                "injected_flit_rate": {
+                    "avg": 0.105135,
+                    "min": 0.0615111,
+                    "max": 0.122478
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.105133,
+                    "min": 0.0913333,
+                    "max": 0.118711
+                },
+                "injected_packet_size": {
+                    "avg": 3.99997
+                },
+                "accepted_packet_size": {
+                    "avg": 3.99998
+                },
+                "hops": {
+                    "avg": 6.23426
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 698.219,
+                "last_ten_lines_of_output": "Accepted packet size average = 3.99998 (1 samples)\nHops average = 6.23426 (1 samples)\nTotal number of messages = 33930\nTotal number of packets = 542880\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 698.219\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.109": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 554.766040712595,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 1485.03,
+                    "min": 18.0,
+                    "max": 50671.0
+                },
+                "network_latency": {
+                    "avg": 86.6172,
+                    "min": 18.0,
+                    "max": 2219.0
+                },
+                "flit_latency": {
+                    "avg": 81.1486,
+                    "min": 13.0,
+                    "max": 2214.0
+                },
+                "fragmentation": {
+                    "avg": 1.44946,
+                    "min": 0.0,
+                    "max": 42.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0270398,
+                    "min": 0.0208944,
+                    "max": 0.0304667
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0270415,
+                    "min": 0.0235556,
+                    "max": 0.0305778
+                },
+                "injected_flit_rate": {
+                    "avg": 0.108159,
+                    "min": 0.0835778,
+                    "max": 0.121867
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.108166,
+                    "min": 0.0942222,
+                    "max": 0.122311
+                },
+                "injected_packet_size": {
+                    "avg": 4.0
+                },
+                "accepted_packet_size": {
+                    "avg": 4.00001
+                },
+                "hops": {
+                    "avg": 6.24238
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 554.642,
+                "last_ten_lines_of_output": "Accepted packet size average = 4.00001 (1 samples)\nHops average = 6.24238 (1 samples)\nTotal number of messages = 26720\nTotal number of packets = 427520\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 554.642\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.11": {
+                "return_code": 0,
+                "status": "Success",
+                "runtime": 400.0124219805002,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 461.256,
+                    "min": 18.0,
+                    "max": 10484.0
+                },
+                "network_latency": {
+                    "avg": 75.5633,
+                    "min": 18.0,
+                    "max": 1697.0
+                },
+                "flit_latency": {
+                    "avg": 71.2368,
+                    "min": 13.0,
+                    "max": 1694.0
+                },
+                "fragmentation": {
+                    "avg": 1.43189,
+                    "min": 0.0,
+                    "max": 35.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.0273996,
+                    "min": 0.0227313,
+                    "max": 0.0315
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0274048,
+                    "min": 0.0223875,
+                    "max": 0.0316312
+                },
+                "injected_flit_rate": {
+                    "avg": 0.109599,
+                    "min": 0.090925,
+                    "max": 0.126
+                },
+                "accepted_flit_rate": {
+                    "avg": 0.109619,
+                    "min": 0.08955,
+                    "max": 0.126525
+                },
+                "injected_packet_size": {
+                    "avg": 4.00002
+                },
+                "accepted_packet_size": {
+                    "avg": 3.99999
+                },
+                "hops": {
+                    "avg": 6.27153
+                },
+                "total_ooo_packets": 0,
+                "peak_rob_size": 0,
+                "peak_robs_per_node": 0,
+                "selection_function_storage_overhead": 0,
+                "total_run_time": 399.891,
+                "last_ten_lines_of_output": "Accepted packet size average = 3.99999 (1 samples)\nHops average = 6.27153 (1 samples)\nTotal number of messages = 19943\nTotal number of packets = 319088\nTotal number of out-of-order packets = 0 (0%)\nPeak RoB size = 0 packets\nPeak number of RoBs per node = 0\nSelection function storage overhead = 0\nTotal run time 399.891\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.111": {
+                "return_code": 2,
+                "status": "Unstable simulation",
+                "runtime": 270.0735173225403,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 5019.9,
+                    "min": 18.0,
+                    "max": 64603.0
+                },
+                "network_latency": {
+                    "avg": 115.977,
+                    "min": 18.0,
+                    "max": 2883.0
+                },
+                "flit_latency": {
+                    "avg": 111.786,
+                    "min": 13.0,
+                    "max": 2880.0
+                },
+                "fragmentation": {
+                    "avg": 1.46028,
+                    "min": 0.0,
+                    "max": 44.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.025995,
+                    "min": 0.01431,
+                    "max": 0.03223
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0259972,
+                    "min": 0.0223,
+                    "max": 0.03061
+                },
+                "injected_flit_rate": {
+                    "avg": 0.10398,
+                    "min": 0.05724,
+                    "max": 0.12893
+                },
+                "accepted_flit_rate": {
+                    "avg": NaN,
+                    "min": 0.08921,
+                    "max": 0.12244
+                },
+                "total_run_time": 269.961,
+                "last_ten_lines_of_output": "\tmaximum = 0.12244 (at node 22)\nInjected packet length average = 3.99999\nAccepted packet length average = 4.00007\nTotal in-flight flits = 2707 (2707 measured)\nlatency change    = 0.0704528\nthroughput change = 0.00460904\nAverage latency for class 0 exceeded 5000 cycles. Aborting simulation.\nSimulation unstable: Too many sample periods needed to converge\nTotal run time 269.961\n",
+                "number_of_deadlocked_runs": 0
+            },
+            "0.2": {
+                "return_code": 2,
+                "status": "Unstable simulation",
+                "runtime": 94.53216996788979,
+                "cdg_check": "unknown",
+                "packet_latency": {
+                    "avg": 11059.3,
+                    "min": 1491.0,
+                    "max": 30921.0
+                },
+                "network_latency": {
+                    "avg": 125.101,
+                    "min": 18.0,
+                    "max": 2683.0
+                },
+                "flit_latency": {
+                    "avg": 122.033,
+                    "min": 13.0,
+                    "max": 2680.0
+                },
+                "fragmentation": {
+                    "avg": 1.50632,
+                    "min": 0.0,
+                    "max": 29.0
+                },
+                "injected_packet_rate": {
+                    "avg": 0.028568,
+                    "min": 0.0078,
+                    "max": 0.0501
+                },
+                "accepted_packet_rate": {
+                    "avg": 0.0285422,
+                    "min": 0.0195,
+                    "max": 0.03905
+                },
+                "injected_flit_rate": {
+                    "avg": 0.114267,
+                    "min": 0.0312,
+                    "max": 0.20025
+                },
+                "accepted_flit_rate": {
+                    "avg": NaN,
+                    "min": 0.078,
+                    "max": 0.1562
+                },
+                "total_run_time": 94.4112,
+                "last_ten_lines_of_output": "\tmaximum = 0.1562 (at node 46)\nInjected packet length average = 3.99984\nAccepted packet length average = 4\nTotal in-flight flits = 2878 (2878 measured)\nlatency change    = 0.663491\nthroughput change = 0.006884\nAverage latency for class 0 exceeded 5000 cycles. Aborting simulation.\nSimulation unstable: Too many sample periods needed to converge\nTotal run time 94.4112\n",
+                "number_of_deadlocked_runs": 0
+            }
+        },
+        "booksim_config": {
+            "deadlock_attempts": 10,
+            "seed": "time",
+            "ignore_cycles": 1,
+            "trace_time_out": 7200,
+            "precision": 0.001,
+            "saturation_factor": 2,
+            "router_latency": 3,
+            "warmup_periods": 1,
+            "sim_count": 1,
+            "hold_switch_for_packet": 0,
+            "vc_allocator": "separable_input_first",
+            "sw_allocator": "separable_input_first",
+            "alloc_iters": 1,
+            "wait_for_tail_credit": 0,
+            "priority": "none",
+            "injection_rate_uses_flits": 1,
+            "deadlock_warn_timeout": 200000,
+            "time_limit": 43200,
+            "latency_thres": 5000.0,
+            "routing_function": "modular_routing",
+            "modular_routing_function": "up_down",
+            "modular_selection_function": "hashed",
+            "num_vcs": 4,
+            "vc_buf_size": 4,
+            "packet_size": 4,
+            "message_size": 16,
+            "in_order_ratio": 0.5,
+            "n_entropy_bits": 8,
+            "threshold_mode": "shortest",
+            "mode": "traffic",
+            "traffic": "uniform",
+            "trace_file": null,
+            "sample_period": 20000,
+            "repetition": 2
+        }
+    }
+]
