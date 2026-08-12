@@ -1,0 +1,594 @@
+OpenROAD 26Q2-2123-g8f0a892fa2 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 8 thread(s).
+source /root/OpenROAD-flow-scripts/flow/platforms/asap7/liberty_suppressions.tcl
+read_liberty /root/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_TT_nldm_211120.lib.gz
+read_liberty /root/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.lib.gz
+read_liberty /root/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_TT_nldm_211120.lib.gz
+read_liberty /root/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.lib
+read_liberty /root/OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.lib.gz
+read_db ./results/asap7/bsg_mesh_router_buffered/base/4_cts.odb
+read_sdc ./results/asap7/bsg_mesh_router_buffered/base/4_cts.sdc
+source /root/OpenROAD-flow-scripts/flow/platforms/asap7/setRC.tcl
+pin_access
+[INFO DRT-0149] Reading tech and libs.
+
+Units:                1000
+Number of layers:     21
+Number of macros:     212
+Number of vias:       14
+Number of viarulegen: 11
+
+[INFO DRT-0150] Reading design.
+
+Design:                   bsg_mesh_router_buffered
+Die area:                 ( 0 0 ) ( 57415 57415 )
+Number of track patterns: 32
+Number of DEF vias:       0
+Number of components:     16034
+Number of terminals:      676
+Number of snets:          2
+Number of nets:           15847
+
+[INFO DRT-0167] List of default vias:
+  Layer V2
+    default via: VIA23
+  Layer V3
+    default via: VIA34
+  Layer V4
+    default via: VIA45
+  Layer V5
+    default via: VIA56
+  Layer V6
+    default via: VIA67
+  Layer V7
+    default via: VIA78
+  Layer V8
+    default via: VIA89
+  Layer V9
+    default via: VIA9Pad
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 188.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete Active.
+[INFO DRT-0024]   Complete V0.
+[INFO DRT-0024]   Complete M1.
+[INFO DRT-0024]   Complete V1.
+[INFO DRT-0024]   Complete M2.
+[INFO DRT-0024]   Complete V2.
+[INFO DRT-0024]   Complete M3.
+[INFO DRT-0024]   Complete V3.
+[INFO DRT-0024]   Complete M4.
+[INFO DRT-0024]   Complete V4.
+[INFO DRT-0024]   Complete M5.
+[INFO DRT-0024]   Complete V5.
+[INFO DRT-0024]   Complete M6.
+[INFO DRT-0024]   Complete V6.
+[INFO DRT-0024]   Complete M7.
+[INFO DRT-0024]   Complete V7.
+[INFO DRT-0024]   Complete M8.
+[INFO DRT-0024]   Complete V8.
+[INFO DRT-0024]   Complete M9.
+[INFO DRT-0024]   Complete V9.
+[INFO DRT-0024]   Complete Pad.
+[INFO DRT-0033] Active shape region query size = 0.
+[INFO DRT-0033] V0 shape region query size = 0.
+[INFO DRT-0033] M1 shape region query size = 292249.
+[INFO DRT-0033] V1 shape region query size = 317266.
+[INFO DRT-0033] M2 shape region query size = 10328.
+[INFO DRT-0033] V2 shape region query size = 5940.
+[INFO DRT-0033] M3 shape region query size = 5940.
+[INFO DRT-0033] V3 shape region query size = 3960.
+[INFO DRT-0033] M4 shape region query size = 4254.
+[INFO DRT-0033] V4 shape region query size = 3960.
+[INFO DRT-0033] M5 shape region query size = 2580.
+[INFO DRT-0033] V5 shape region query size = 400.
+[INFO DRT-0033] M6 shape region query size = 240.
+[INFO DRT-0033] V6 shape region query size = 0.
+[INFO DRT-0033] M7 shape region query size = 0.
+[INFO DRT-0033] V7 shape region query size = 0.
+[INFO DRT-0033] M8 shape region query size = 0.
+[INFO DRT-0033] V8 shape region query size = 0.
+[INFO DRT-0033] M9 shape region query size = 0.
+[INFO DRT-0033] V9 shape region query size = 0.
+[INFO DRT-0033] Pad shape region query size = 0.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0076]   Complete 1000 pins.
+[INFO DRT-0078]   Complete 1076 pins.
+[INFO DRT-0079]   Complete 100 unique inst patterns.
+[INFO DRT-0081]   Complete 188 unique inst patterns.
+[INFO DRT-0084]   Complete 8565 groups.
+#scanned instances     = 16034
+#unique  instances     = 188
+#stdCellGenAp          = 5641
+#stdCellValidPlanarAp  = 78
+#stdCellValidViaAp     = 4702
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 51039
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:10:00, elapsed time = 00:01:17, memory = 273.04 (MB), peak = 274.12 (MB)
+Took 78 seconds: pin_access
+global_route -congestion_report_file ./reports/asap7/bsg_mesh_router_buffered/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose -resistance_aware
+[INFO GRT-0020] Min routing layer: M2
+[INFO GRT-0021] Max routing layer: M7
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer M1      Track-Pitch = 0.0360  line-2-Via Pitch: 0.0360
+[INFO GRT-0088] Layer M2      Track-Pitch = 0.0390  line-2-Via Pitch: 0.0360
+[INFO GRT-0088] Layer M3      Track-Pitch = 0.0360  line-2-Via Pitch: 0.0360
+[INFO GRT-0088] Layer M4      Track-Pitch = 0.0480  line-2-Via Pitch: 0.0480
+[INFO GRT-0088] Layer M5      Track-Pitch = 0.0480  line-2-Via Pitch: 0.0480
+[INFO GRT-0088] Layer M6      Track-Pitch = 0.0640  line-2-Via Pitch: 0.0640
+[INFO GRT-0088] Layer M7      Track-Pitch = 0.0640  line-2-Via Pitch: 0.0640
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 7881
+[INFO GRT-0019] Found 156 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 21
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+M1         Vertical            0             0          0.00%
+M2         Horizontal     117624         84851          27.86%
+M3         Vertical       152077        113021          25.68%
+M4         Horizontal     116324         86438          25.69%
+M5         Vertical       112576         83610          25.73%
+M6         Horizontal      79027         53691          32.06%
+M7         Vertical        88803         59895          32.55%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 99375
+[INFO GRT-0198] Via related Steiner nodes: 2628
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 129488
+[INFO GRT-0112] Final usage 3D: 476065
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Congestion
+---------------------------------------------------------------------------------------
+M1                   0             0            0.00%             0 /  0 /  0
+M2               84851         31135           36.69%             0 /  0 /  0
+M3              113021         34304           30.35%             0 /  0 /  0
+M4               86438          9198           10.64%             0 /  0 /  0
+M5               83610          7248            8.67%             0 /  0 /  0
+M6               53691          3257            6.07%             0 /  0 /  0
+M7               59895          2459            4.11%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           481506         87601           18.19%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 72651 um
+[INFO GRT-0014] Routed nets: 15827
+[INFO GRT-0303] Global routing runtime = 00:00:05
+Took 5 seconds: global_route -congestion_report_file ./reports/asap7/bsg_mesh_router_buffered/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose -resistance_aware
+estimate_parasitics -global_routing
+Perform buffer insertion and gate resizing...
+repair_design -verbose
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |     15880
+     1000 |     +0.0% |       0 |       0 |             0 |     14880
+[WARNING RSZ-0104] Net _14682_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14681_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14676_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14684_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14678_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14674_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14668_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14675_ only has one pin. Check if it is intended to be dangling.
+     2000 |     +0.0% |       0 |       0 |             0 |     13880
+[WARNING RSZ-0104] Net _14680_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14672_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14683_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14677_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14673_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14667_ only has one pin. Check if it is intended to be dangling.
+     3000 |     +0.0% |       0 |       0 |             0 |     12880
+     4000 |     +0.0% |       0 |       0 |             0 |     11880
+[WARNING RSZ-0104] Net _14670_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14679_ only has one pin. Check if it is intended to be dangling.
+     5000 |     +0.0% |       0 |       0 |             0 |     10880
+     6000 |     +0.0% |       0 |       0 |             0 |      9880
+[WARNING RSZ-0104] Net _14666_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14671_ only has one pin. Check if it is intended to be dangling.
+[WARNING RSZ-0104] Net _14669_ only has one pin. Check if it is intended to be dangling.
+     7000 |     +0.0% |       0 |       0 |             0 |      8880
+     8000 |     +0.0% |       0 |       0 |             0 |      7880
+[WARNING RSZ-0104] Net _14665_ only has one pin. Check if it is intended to be dangling.
+     9000 |     +0.0% |       0 |       0 |             0 |      6880
+    10000 |     +0.0% |       0 |       0 |             0 |      5880
+    11000 |     +0.0% |       0 |       0 |             0 |      4880
+    12000 |     +0.0% |       0 |       0 |             0 |      3880
+    13000 |     +0.0% |       0 |       0 |             0 |      2880
+    14000 |     +0.0% |       0 |       0 |             0 |      1880
+    15000 |     +0.0% |       0 |       0 |             0 |       880
+    final |     +0.0% |       0 |       0 |             0 |         0
+---------------------------------------------------------------------
+global_route -start_incremental
+detailed_placement
+[INFO DPL-0006] Core area: 2837.79 um^2, Instances area: 1977.92 um^2, Utilization: 69.7%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1101] Legalizing using diamond search.
+Movements Summary
+---------------------------------------
+Total cells:                   15441
+Diamond Move Success:          15441 (100.00%)
+Diamond Move Failure:              0
+Rip-up and replace Success:        0 (  0.00% of diamond failures)
+Rip-up and replace Failure:        0
+Total Placement Failures:          0
+---------------------------------------
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL           42364.1 u
+legalized HPWL          42364.1 u
+delta HPWL                    0 %
+
+global_route -end_incremental -resistance_aware -congestion_report_file ./reports/asap7/bsg_mesh_router_buffered/base/congestion_post_repair_design.rpt
+Repair setup and hold violations...
+estimate_parasitics -global_routing
+repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -verbose
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove SplitLoadMove 
+[INFO RSZ-0094] Found 144 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 144 out of 144 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   StTNS    |   EnTNS    |  Viol  |  Worst  
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            |            | Endpts | St/EnPt 
+------------------------------------------------------------------------------------------------------------------------------
+       0* |       0 |       0 |        0 |      0 |     0 |    +0.0% |  -16.134 |      -94.5 |    -1219.3 |    144 | link_o[201]
+      10* |       0 |       2 |        2 |      0 |     5 |    +0.0% |  -11.770 |      -73.7 |     -886.1 |    144 | link_o[265]
+      20* |       0 |       6 |        3 |      0 |    10 |    +0.0% |  -10.730 |      -55.3 |     -883.8 |    144 | link_o[199]
+      30* |       0 |       9 |        7 |      0 |    15 |    +0.1% |  -15.416 |      -90.9 |     -834.3 |    144 | link_o[222]
+      40* |       0 |      12 |       11 |      0 |    18 |    +0.1% |  -20.931 |     -132.0 |     -874.7 |    144 | link_o[218]
+      50* |       0 |      16 |       15 |      0 |    21 |    +0.1% |  -16.640 |     -101.6 |     -679.2 |    144 | link_o[238]
+      60* |       0 |      18 |       20 |      0 |    24 |    +0.2% |  -30.730 |     -212.3 |    -1443.3 |    144 | link_o[238]
+      61* |       0 |       7 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -45.8 |     -478.6 |    144 | link_o[199]
+      67* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+      70* |       0 |      11 |        4 |      0 |    14 |    +0.0% |  -21.584 |     -118.9 |     -612.3 |    144 | link_o[209]
+      70* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+      73* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+      76* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+      78* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+      80* |       0 |      11 |        3 |      0 |    14 |    +0.0% |   -9.013 |      -48.7 |     -486.4 |    144 | link_o[199]
+      80* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+      90* |       0 |      13 |        8 |      0 |    15 |    +0.1% |  -31.778 |     -204.4 |    -1055.2 |    144 | link_o[241]
+      99* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     100* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     101* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     103* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     105* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     106* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     108* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     109* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     110* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     115* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     116* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     120* |       0 |      11 |        5 |      0 |    14 |    +0.1% |  -25.988 |     -151.7 |     -630.2 |    144 | link_o[241]
+     122* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     128* |       0 |      10 |        3 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -437.3 |    144 | link_o[199]
+     130* |       0 |      10 |        4 |      0 |    14 |    +0.0% |   -7.336 |      -43.8 |     -432.5 |    144 | link_o[199]
+     133* |       0 |      12 |        6 |      0 |    14 |    +0.0% |   -7.336 |      -31.9 |     -341.8 |    144 | link_o[199]
+     139* |       0 |      12 |        6 |      0 |    14 |    +0.0% |   -7.336 |      -31.9 |     -341.8 |    144 | link_o[199]
+     140* |       0 |      12 |        6 |      0 |    14 |    +0.0% |   -7.336 |      -31.9 |     -341.8 |    144 | link_o[199]
+     150* |       0 |      18 |       10 |      0 |    14 |    +0.1% |  -26.901 |     -141.2 |     -494.0 |    144 | link_o[241]
+     155* |       0 |      12 |        6 |      0 |    14 |    +0.0% |   -7.336 |      -31.9 |     -341.8 |    144 | link_o[199]
+     160* |       0 |      14 |        8 |      0 |    14 |    +0.1% |  -25.988 |     -145.1 |     -530.2 |    144 | link_o[241]
+     161* |       0 |      12 |        6 |      0 |    14 |    +0.0% |   -7.336 |      -31.9 |     -341.8 |    144 | link_o[199]
+     162* |       0 |      12 |        6 |      0 |    14 |    +0.0% |   -7.336 |      -31.9 |     -341.8 |    144 | link_o[199]
+     170* |       0 |      15 |       10 |      0 |    14 |    +0.1% |  -16.117 |      -70.8 |     -440.2 |    144 | link_o[251]
+     175* |       0 |      12 |        6 |      0 |    14 |    +0.0% |   -7.336 |      -31.9 |     -341.8 |    144 | link_o[199]
+     180* |       0 |      14 |        8 |      0 |    14 |    +0.1% |  -15.514 |      -75.2 |     -517.8 |    144 | link_o[251]
+     188* |       0 |      12 |        6 |      0 |    14 |    +0.0% |   -7.336 |      -31.9 |     -341.8 |    144 | link_o[199]
+     190* |       0 |      13 |        6 |      0 |    14 |    +0.1% |   -9.132 |      -37.5 |     -361.8 |    144 | link_o[199]
+     200* |       0 |      18 |       10 |      0 |    15 |    +0.1% |  -13.385 |      -63.1 |     -254.3 |    144 | link_o[251]
+     201* |       0 |      12 |        6 |      0 |    14 |    +0.0% |   -7.336 |      -31.9 |     -341.8 |    144 | link_o[199]
+     205* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.336 |      -30.9 |     -289.8 |    144 | link_o[199]
+     210* |       0 |      15 |        9 |      0 |    15 |    +0.1% |  -15.514 |      -74.2 |     -465.8 |    144 | link_o[251]
+     218* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.336 |      -30.9 |     -289.8 |    144 | link_o[199]
+     220* |       0 |      14 |        7 |      0 |    15 |    +0.1% |   -9.132 |      -36.5 |     -309.7 |    144 | link_o[199]
+     230* |       0 |      19 |       11 |      0 |    16 |    +0.1% |  -13.385 |      -62.2 |     -252.4 |    144 | link_o[251]
+     231* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.336 |      -30.9 |     -289.8 |    144 | link_o[199]
+     240* |       0 |      17 |       11 |      0 |    15 |    +0.1% |  -14.506 |      -67.1 |     -310.8 |    144 | link_o[251]
+     244* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.336 |      -30.9 |     -289.8 |    144 | link_o[199]
+     250* |       0 |      15 |       10 |      0 |    15 |    +0.1% |  -15.136 |      -73.3 |     -426.0 |    144 | link_o[251]
+     257* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.336 |      -30.9 |     -289.8 |    144 | link_o[199]
+     258* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.336 |      -30.9 |     -289.8 |    144 | link_o[199]
+     260* |       0 |      14 |        7 |      0 |    15 |    +0.1% |   -8.746 |      -34.6 |     -315.4 |    144 | link_o[251]
+     265* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     266* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     267* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     268* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     269* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     270* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     270* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     271* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     272* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     273* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     274* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     275* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     276* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     277* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     278* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     279* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     280* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     290* |       0 |      16 |       16 |      0 |    15 |    +0.1% |  -20.726 |      -93.1 |     -742.2 |    144 | link_o[198]
+     298* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     299* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     300* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     300* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     301* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     302* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     303* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     310* |       0 |      16 |       11 |      0 |    15 |    +0.1% |  -24.985 |     -135.4 |     -564.8 |    144 | link_o[205]
+     318* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     319* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     320* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     326* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     327* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     328* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     329* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     330* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     330* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     331* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     338* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     340* |       0 |      14 |        7 |      0 |    15 |    +0.1% |   -8.746 |      -34.6 |     -315.2 |    144 | link_o[251]
+     349* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     350* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     356* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     357* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     360* |       0 |      14 |        8 |      0 |    15 |    +0.1% |  -22.944 |     -111.3 |     -475.8 |    144 | link_o[261]
+     364* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     370* |       0 |      16 |        9 |      0 |    15 |    +0.1% |  -24.985 |     -135.4 |     -460.5 |    144 | link_o[205]
+     371* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     378* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     380* |       0 |      14 |        7 |      0 |    15 |    +0.1% |   -8.746 |      -34.6 |     -315.2 |    144 | link_o[251]
+     390* |       0 |      17 |       16 |      0 |    15 |    +0.1% |  -20.602 |      -92.5 |     -740.1 |    144 | link_o[198]
+     398* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     400* |       0 |      14 |        7 |      0 |    15 |    +0.1% |   -8.746 |      -34.6 |     -315.2 |    144 | link_o[251]
+     410* |       0 |      17 |       16 |      0 |    15 |    +0.1% |  -37.750 |     -277.3 |     -561.2 |    144 | link_o[260]
+     419* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     420* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     430* |       0 |      17 |       15 |      0 |    15 |    +0.1% |  -23.892 |     -108.9 |     -624.9 |    144 | link_o[198]
+     440* |       0 |      20 |       23 |      0 |    15 |    +0.2% |  -24.127 |     -129.1 |    -1008.9 |    144 | link_o[257]
+     440* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     445* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     450* |       0 |      15 |       10 |      0 |    15 |    +0.1% |  -14.872 |      -71.0 |     -483.0 |    144 | link_o[259]
+     460* |       0 |      18 |       19 |      0 |    15 |    +0.1% |  -25.618 |     -123.1 |     -818.9 |    144 | link_o[198]
+     470* |       0 |      25 |       21 |      0 |    16 |    +0.2% |  -22.887 |     -126.8 |     -716.0 |    144 | link_o[198]
+     471* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     480* |       0 |      16 |       13 |      0 |    15 |    +0.1% |  -36.755 |     -195.8 |     -517.1 |    144 | link_o[198]
+     490* |       0 |      23 |       16 |      0 |    16 |    +0.1% |  -14.905 |      -70.0 |     -551.0 |    144 | link_o[232]
+     490* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     500* |       0 |      16 |       15 |      0 |    15 |    +0.1% |  -24.016 |     -109.6 |     -626.8 |    144 | link_o[198]
+     500* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     510* |       0 |      16 |       15 |      0 |    15 |    +0.1% |  -24.016 |     -109.6 |     -626.8 |    144 | link_o[198]
+     510* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     511* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     516* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     519* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     520* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     524* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     525* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     530* |       0 |      14 |       10 |      0 |    15 |    +0.1% |  -22.410 |     -158.2 |     -497.5 |    144 | link_o[220]
+     530* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     535* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     540* |       0 |      14 |       10 |      0 |    15 |    +0.1% |  -22.016 |     -144.8 |     -680.3 |    144 | link_o[234]
+     550* |       0 |      20 |       14 |      0 |    15 |    +0.1% |  -19.137 |     -140.2 |     -816.0 |    144 | link_o[199]
+     554* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     560* |       0 |      15 |       10 |      0 |    15 |    +0.1% |  -15.356 |      -73.4 |     -618.6 |    144 | link_o[218]
+     565* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     566* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     570* |       0 |      14 |        9 |      0 |    15 |    +0.1% |  -22.388 |     -120.6 |     -467.1 |    144 | link_o[220]
+     571* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     580* |       0 |      16 |       12 |      0 |    15 |    +0.1% |  -23.990 |     -165.1 |     -762.6 |    144 | link_o[220]
+     585* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     590* |       0 |      14 |       10 |      0 |    15 |    +0.1% |  -22.388 |     -158.1 |     -497.3 |    144 | link_o[220]
+     600* |       0 |      16 |       19 |      0 |    15 |    +0.1% |  -27.282 |     -200.2 |    -1186.4 |    144 | link_o[226]
+     606* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     610* |       0 |      14 |        9 |      0 |    15 |    +0.1% |  -22.388 |     -120.6 |     -467.1 |    144 | link_o[220]
+     620* |       0 |      15 |       19 |      0 |    15 |    +0.1% |  -28.893 |     -202.9 |    -1284.6 |    144 | link_o[226]
+     629* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     630* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     639* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     640* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     640* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     641* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     650* |       0 |      15 |       13 |      0 |    15 |    +0.1% |  -37.484 |     -201.4 |     -655.2 |    144 | link_o[226]
+     651* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     652* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     653* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     660* |       0 |      15 |       11 |      0 |    15 |    +0.1% |  -14.977 |      -72.5 |     -577.5 |    144 | link_o[218]
+     663* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     664* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     665* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     666* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     670* |       0 |      14 |        9 |      0 |    15 |    +0.1% |  -20.217 |      -97.7 |     -579.7 |    144 | link_o[220]
+     680* |       0 |      19 |       15 |      0 |    15 |    +0.1% |  -17.863 |      -83.9 |     -765.3 |    144 | link_o[218]
+     684* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     685* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     690* |       0 |      14 |       10 |      0 |    15 |    +0.1% |  -16.834 |      -80.8 |     -639.4 |    144 | link_o[220]
+     695* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     700* |       0 |      14 |       10 |      0 |    15 |    +0.1% |  -16.834 |      -80.8 |     -639.4 |    144 | link_o[220]
+     710* |       0 |      20 |       15 |      0 |    15 |    +0.1% |  -16.772 |      -79.0 |     -708.6 |    144 | link_o[218]
+     713* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     720* |       0 |      15 |       11 |      0 |    15 |    +0.1% |  -14.977 |      -72.5 |     -577.5 |    144 | link_o[218]
+     730* |       0 |      22 |       15 |      0 |    15 |    +0.1% |  -16.743 |      -79.0 |     -706.0 |    144 | link_o[218]
+     730* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     731* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     732* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     733* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     734* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     735* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     736* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     737* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     738* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     739* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     740* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     740* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     741* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     742* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     743* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     744* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     745* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     746* |       0 |      13 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -289.8 |    144 | link_o[199]
+     749* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     750* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     750* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     751* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     752* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     753* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     754* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     755* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     756* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     757* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     758* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     759* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     760* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     760* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     761* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     762* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     763* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     764* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     765* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     766* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     767* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     768* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     769* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     770* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     770* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     771* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     771* |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |    144 | link_o[199]
+     772+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     773+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     774+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     775+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     776+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     777+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     778+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     779+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     780+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     780+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     781+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     782+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     783+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     784+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     785+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     786+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     787+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     788+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     789+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     790+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     790+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     791+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     792+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     793+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     794+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     795+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     796+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     797+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     798+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     799+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     800+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     800+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     801+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     802+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     803+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     804+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     805+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     806+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     807+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     808+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     809+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     810+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     810+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     811+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     812+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     813+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     814+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     815+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     816+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     817+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     818+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     819+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     820+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     820+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     821+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     822+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     823+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     824+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     825+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     826+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     827+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     828+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     829+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     830+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     830+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     831+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+     832+ |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+    final |       0 |      15 |        7 |      0 |    15 |    +0.1% |   -7.335 |      -30.9 |     -266.9 |     61 | link_o[199]
+------------------------------------------------------------------------------------------------------------------------------
+[INFO RSZ-0045] Inserted 7 buffers, 1 to split loads.
+[INFO RSZ-0051] Resized 15 instances: 15 up, 0 up match, 0 down, 0 VT
+[INFO RSZ-0043] Swapped pins on 15 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0033] No hold violations found.
+Took 55 seconds: repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -skip_gate_cloning -verbose
+global_route -start_incremental
+detailed_placement
+[INFO DPL-0006] Core area: 2837.79 um^2, Instances area: 1979.00 um^2, Utilization: 69.7%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1101] Legalizing using diamond search.
+Movements Summary
+---------------------------------------
+Total cells:                   15448
+Diamond Move Success:          15448 (100.00%)
+Diamond Move Failure:              0
+Rip-up and replace Success:        0 (  0.00% of diamond failures)
+Rip-up and replace Failure:        0
+Total Placement Failures:          0
+---------------------------------------
+Placement Analysis
+---------------------------------
+total displacement          6.8 u
+average displacement        0.0 u
+max displacement            0.5 u
+original HPWL           42376.5 u
+legalized HPWL          42381.4 u
+delta HPWL                    0 %
+
+global_route -end_incremental -resistance_aware -congestion_report_file ./reports/asap7/bsg_mesh_router_buffered/base/congestion_post_repair_timing.rpt
+global_route -start_incremental
+global_route -end_incremental -resistance_aware -congestion_report_file ./reports/asap7/bsg_mesh_router_buffered/base/congestion_post_recover_power.rpt
+Repair antennas...
+[WARNING GRT-0246] No diode with LEF class CORE ANTENNACELL found.
+[INFO ANT-0002] Found 0 net violations.
+[INFO ANT-0001] Found 0 pin violations.
+Estimate parasitics...
+estimate_parasitics -global_routing
+Report metrics stage 5, global route...
+
+==========================================================================
+global route report_design_area
+--------------------------------------------------------------------------
+Design area 1979 um^2 70% utilization.
+[INFO FLW-0007] clock clk period 1250.000000
+[INFO FLW-0008] Clock clk period 1195.087
+[INFO FLW-0009] Clock clk slack -7.986
+[INFO FLW-0011] Path endpoint path count 3000
+write_db ./results/asap7/bsg_mesh_router_buffered/base/5_1_grt.odb
+write_sdc -no_timestamp ./results/asap7/bsg_mesh_router_buffered/base/5_1_grt.sdc
+Elapsed time: 2:31.93[h:]min:sec. CPU time: user 886.66 sys 4.85 (586%). Peak memory: 595680KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+5_1_grt                   .odb          151            581 402996ca908542e1b559
+5_1_grt                   .sdc                             6ecf8c35b41fbf1915a1
